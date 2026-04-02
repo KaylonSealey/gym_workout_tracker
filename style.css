@@ -9,16 +9,31 @@ body {
     text-align: center;
     background: #121212;
     color: #e0e0e0;
-    padding: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-height: 400px;
+    width: 100;
 }
 
 h1 {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 2em;
 }
 
 form {
-    margin-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 10px
 }
 
 input {
@@ -53,18 +68,40 @@ button:hover {
 
 ul {
     margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 
 li {
-    list-style: none;
     background: #1e1e1e;
-    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: 0.2;
     padding: 10px;
     border-radius: 8px;
-    width: 300px;
 }
 
 li:hover {
     background: #2a2a2a;
+}
+
+li button {
+    color: #fff;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+li button:hover {
+    background: #ff1f3d;
+
+}
+
+#setsContainer div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
 }

@@ -6,18 +6,20 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body> 
+    <body>
+        <div class="container">
         <h1>Gym Workout Tracker</h1>
 
         <form id="workoutForm">
             <input type="text" id="exercise" placeholder="Exercise" required>
-            <input type="number" id="sets" placeholder="Sets" required>
-            <input type="number" id="reps" placeholder="Reps" required>
-            <input type="number" id="weight" placeholder="Weight (lbs)" required>
+            <input type="number" id="numSets" placeholder="Number of Sets" required>
+            <button type="button" id="createSetInputs">Add Sets</button>
+            <div id="setsContainer"></div>
             <button type="submit">Add Workout</button>
         </form>
 
-        <ul id="workoutList"></ul>
+            <ul id="workoutList"></ul>
+        </div>
 
         <script src="script.js"></script>
     </body>
